@@ -17,6 +17,8 @@ public class ClassroomController {
 	@GetMapping("getclassroom/{clsid}")
 	public Classroom fetchClassroom(@PathVariable("clsid") int clsId) {
 		System.err.println(clsId);
+
+		System.err.println(hello mand");
 		Classroom classroom = classroomService.fetchClassroom(clsId);
 		return classroom;
 	}
